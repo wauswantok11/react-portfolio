@@ -1,0 +1,39 @@
+.BizContainer {
+  height: 500px;
+  background-color: #fff;
+  margin:  0px auto;
+  overflow: hidden; 
+  text-align: center; 
+  & .BizTitle {
+    margin-top: 55px;
+    font-size: 32px;
+    font-weight: bold;
+    
+  }
+
+  & .BizList {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    & .BizItem {
+        width: 320px;
+        height: 320px;
+        margin: 45px;
+      & img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin: 20px;
+      }
+      & h4{
+        font-size: 24px;
+        font-weight: bold;
+      }
+      & p{
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}

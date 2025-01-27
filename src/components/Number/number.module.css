@@ -1,0 +1,21 @@
+.NumberContainer{
+    height: 300px;
+    background-color: #0085ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    & .NumberItem{
+        color: #fff;
+        margin: 0 50px;
+        & .NumberQuantity{
+            font-size: 48px;
+            font-weight: bold;
+        }
+        & .NumberTitle{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
