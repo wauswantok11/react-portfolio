@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+nav { 
+  background-color: #0085ff;
+
+  & a {
+    color: #fff;
+  }
+
+  & .conteiner {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  & .navbarBar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .NavLogo {
+      & a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    & ul {
+      display: flex;
+      list-style: none;
+      & li {
+        margin: 0 35px;
+        & a {
+            text-decoration: none;
+        }
+      }
+    }
+    & .btnHireMe {
+        width: 100px;
+        height: 35px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.3) ;
+        }
+        & a {
+            text-decoration: none;
+            color: #333;
+
+        }
+    } 
+  }
+}

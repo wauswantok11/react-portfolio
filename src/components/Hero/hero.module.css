@@ -1,0 +1,57 @@
+ 
+.HeroWrapper {
+  height: 500px;
+  overflow: hidden;
+  & .Container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  & .HeroCon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px;
+    & .HeroInfo {
+      & .HeroHi {
+        font-size: 32px;
+      }
+      & .HeroName {
+        font-size: 64px;
+        font-weight: bold;
+        color: #0085ff;
+      }
+      & .HeroPosition {
+        font-size: 32px;
+      }
+      & .HeroJobDetail {
+        font-size: 16px;
+        margin-top: 25px;
+      }
+      & .HeroSocial{
+        display: flex;
+        list-style: none;
+        margin-top: 25px;
+        & li {
+            margin-right: 20px;
+            & a {
+                & svg {
+                    width: 32px;
+                    height: 32px;
+                }
+                color: #0085ff;
+            }
+        }
+      }
+    }
+    & .HeroImages{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-image: url("../../assets/image/66306s.jpg");
+        background-size: cover;  
+        background-position: center;  
+        margin-right: 120px;
+        box-shadow: 0 0 10px 0px rgba(0,0,0,0.1) ;
+
+      }
+  }
+}
