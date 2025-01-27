@@ -1,0 +1,44 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.PortfolioContainer{
+    max-width: 1170px;
+    height: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    & .PortfolioTitle{
+        font-weight: bold;
+        font-size: 32px;
+        margin-top: 45px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    & .PortfolioList{
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr 1fr; 
+        justify-content: center;
+        & .PortfolioItem{
+            margin-top: 10px; 
+            
+            /* display: flex; */
+            & img{
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 20px;
+                box-shadow: 0 0 10px 0px rgba(0,0,0,0.3) ;
+            }
+            & p {
+                font-family: "Noto Sans", serif;
+                margin-top: 20px;
+                font-size: 16px;
+                margin: 10px 0;
+                font-weight: bold;
+            }
+        }
+    }
+   
+}

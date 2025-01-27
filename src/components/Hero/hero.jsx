@@ -14,7 +14,7 @@ function hero (){
                             Hi, it's Me
                         </p>
                         <h3 className={styles.HeroName}>
-                            ADUL VASUVANTOKA
+                            ADUL VASUVANTOK
                         </h3>
                         <p className={styles.HeroPosition}>
                             I'm a Full Stack Developer

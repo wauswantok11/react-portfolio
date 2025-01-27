@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./navber.module.css";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const navber = () => {
   return (
@@ -9,7 +10,6 @@ const navber = () => {
           <div className={styles.NavLogo} >
             <a href="#"> PORTFOLIO </a>
           </div>
-
           <ul>
             <li> 
               <a href="#"> Skills </a>
@@ -20,10 +20,9 @@ const navber = () => {
             <li>
                 <a href="#" > Contact </a>
             </li>
-          </ul>
-
+          </ul> 
           <div className={styles.btnHireMe}>
-            <a href="#" > Hire Me </a> 
+            <FaRegUserCircle /> <a> Hire Me </a> 
           </div>
         </div>
       </div>
