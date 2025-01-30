@@ -12,7 +12,7 @@ import { FaDocker } from "react-icons/fa6";
 function skill() {
   return (
     <div className={styles.SkillContainer}>
-        <h3 className={styles.SkillTitle}>My Skill Set</h3>
+        <h3 className={styles.SkillTitle}>My Skill</h3>
         <ul className={styles.SkillList}>
           <li> <FaGolang /> </li>
           <li> <FaJsSquare /> </li>

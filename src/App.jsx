@@ -7,6 +7,7 @@ import Portfolio from './components/portfolio/portfolio'
 import Number from './components/Number/number'
 import Biz from './components/biz/biz'
 import Footer from './components/Footer/Footer'
+import Contact from './components/Contact/Contact'
 function App() { 
   return (
     <> 
@@ -17,6 +18,7 @@ function App() {
       <Portfolio />
       <Number />
       <Biz />
+      <Contact /> 
       <Footer />
     </>
   )

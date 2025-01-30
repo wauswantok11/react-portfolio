@@ -37,7 +37,8 @@ function hero (){
                             </li>
                         </ul>
                     </div>
-                    <div> 
+
+                    <div className={styles.HeroBoxImages}> 
                         <div  className={styles.HeroImages}></div>
                     </div>
                 </div>

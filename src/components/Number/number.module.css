@@ -19,3 +19,15 @@
         }
     }
 }
+
+@media screen and (max-width: 740px) {
+   .NumberContainer{
+    height: auto !important;
+    display: block;
+    overflow: hidden;
+    padding: 50px 0px;
+    & .NumberItem{
+        margin: 20px 0px;
+    }
+   }
+}

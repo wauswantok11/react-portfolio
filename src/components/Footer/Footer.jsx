@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className={styles.FooterContainer}>
         <p className={styles.FooterText}>
-            Copyright © 2023. All Rights Reserved.
+            Copyright © 2025. All Rights Reserved.
         </p>
     </div>
   )

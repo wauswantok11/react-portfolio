@@ -1,37 +1,55 @@
-.JobContainer{ 
-    height: 600px;
-    text-align: center;
-    overflow: hidden;
-    & .JobTitle{
-        margin-top: 60px;
-        font-weight: bold;
-        font-size: 32px;
+.JobContainer {
+  height: 600px;
+  text-align: center;
+  overflow: hidden;
+  & .JobTitle {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  & .JobContentList {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+  }
+  & .JobContent {
+    width: 250px;
+    margin: 0 50px;
+    & .JobContentTitle {
+      font-weight: bold;
+      font-size: 32px;
+      color: #0085ff;
+      margin: 25px 0px;
+    }
+    & .JobContentIcon {
+      & svg {
+        height: 80px;
+        width: 80px;
+        color: #0085ff;
+      }
+    }
+    & .JobContentDetail {
+      font-size: 16px;
+    }
+  }
+}
 
-    }
-    & .JobContentList{
-        margin-top: 110px;
-        display: flex;
-        justify-content: center;
+@media screen and (max-width: 770px) {
+  .JobContainer {
+    margin-top: 0px;
+    height: auto !important;
+    & .JobContentList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
+      & .JobContent {
+        transition: width 0.5s ease;
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+      }
     }
-    & .JobContent{
-        width: 250px;
-        margin: 0 50px;
-        & .JobContentTitle{
-            font-weight: bold;
-            font-size: 32px;
-            color:  #0085ff;
-            margin: 25px 0px;
-        }
-        & .JobContentIcon {
-            & svg{
-                height: 80px;
-                width: 80px;
-                color:  #0085ff;
-            }
-        }
-        & .JobContentDetail{
-            font-size: 16px;
-        }
-    }
+  }
 }

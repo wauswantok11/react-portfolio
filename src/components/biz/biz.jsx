@@ -11,6 +11,7 @@ function biz() {
         <h3 className={styles.BizTitle}>Working Organizations</h3>
 
         <div className={styles.BizList}> 
+            
             <div className={styles.BizItem}>      
                 <p>Work with Education and Innovative Learning Academy </p>
                 <img src={PSU} alt="PSU" />
@@ -28,7 +29,7 @@ function biz() {
             <div className={styles.BizItem}>      
                 <p>Work with ONE ID SERVICE Team </p>
                 <img src={THAIID} alt="THAIID" />
-                <h4 className={styles.BizName}>  THAI IDENTITIES COMPANY LIMITED </h4>
+                <h4 className={styles.BizName}>  Thai Identities Company limited </h4>
                 <p className={styles.BizPositing}> Software Engineer </p>
             </div>
 

@@ -1,12 +1,12 @@
 .FooterContainer{
     height: 50px;
-    background-color: #0085ff;
+    background-color: #fff;
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     & .FooterText{
-        color: #fff;
+        color: #000;
         font-weight: bold;
 
     }
