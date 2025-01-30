@@ -23,7 +23,9 @@
 @media screen and (max-width: 740px) {
    .NumberContainer{
     height: auto !important;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     overflow: hidden;
     padding: 50px 0px;
     & .NumberItem{
@@ -31,3 +33,16 @@
     }
    }
 }
+
+
+@media screen and (max-width: 450px) {
+    .NumberContainer{
+     height: auto !important;
+     display: block;
+     overflow: hidden;
+     padding: 50px 0px;
+     & .NumberItem{
+         margin: 20px 0px;
+     }
+    }
+ }

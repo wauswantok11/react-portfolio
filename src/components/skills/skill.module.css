@@ -6,7 +6,7 @@
   overflow: hidden;
 
   & .SkillTitle {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 32px;
     font-weight: bold;
   }
@@ -29,18 +29,63 @@
 
 @media screen and (max-width: 820px) {
   .SkillContainer {
+    height: auto !important;
+    overflow: hidden;
+
+    & .SkillTitle {
+      margin: 20px 0px; 
+      font-weight: 900;
+    }
+
     & .SkillList {
+      margin: 10px 20px 0px 0px;
       & li {
         margin: 0 20px;
         & svg {
           width: 40px;
           height: 40px;
-          transition: width 0.5s ease; 
+          transition: width 0.5s ease;
           @media screen and (max-width: 550px) {
             width: 20px;
             height: 20px;
-            transition: width 0.5s ease; 
+            transition: width 0.5s ease;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .SkillContainer {
+    & .SkillList { 
+
+      margin: 0 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      & li {
+        & svg {
+          margin: 10px 0px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .SkillContainer {
+    & .SkillList { 
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      & li {
+        & svg {
+          margin: 10px 0px;
+          width: 40px;
+          height: 40px;
         }
       }
     }

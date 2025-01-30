@@ -20,10 +20,11 @@ function hero (){
                             I'm a Full Stack Developer
                         </p>
                         <p className={styles.HeroJobDetail}>
-                        Proficient in RESTful API backend development using Golang and MySQL
-                        <br />Basic DevOps management.
-                        <br />Studied Faculty of Science at the Prince of Songkla University, Thailand 
-                        <br />Software Engineer (Full Stack Developer) at INET Thailand
+                            
+                            Proficient in RESTful API backend development using Golang and MySQL
+                            <br />Basic DevOps management.
+                            <br />Studied Faculty of Science at the Prince of Songkla University, Thailand 
+                            <br />Software Engineer (Full Stack Developer) at INET Thailand
                         </p>
                         <ul className={styles.HeroSocial}>
                             <li>

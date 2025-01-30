@@ -53,13 +53,26 @@
     }
   }
 }
+@media screen and (max-width: 1290px) {
+  /* & .HeroWrapper {
+    height: auto !important; */
 
-@media screen and (max-width: 900px) {
+  & .HeroInfo {
+    margin-left: 100px;
+    transition: margin-left 0.5s ease;
+    /* } */
+  }
+}
+
+@media screen and (max-width: 1133px) {
   & .HeroWrapper {
     height: auto !important;
-
     & .HeroCon {
       flex-direction: column;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 115px;
+      align-items: center;
       margin: 50px 0;
       & .HeroBoxImages {
         order: 1;
@@ -77,4 +90,10 @@
     }
   }
 }
- 
+
+@media screen and (max-width: 430px) {
+  & .HeroJobDetail {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}

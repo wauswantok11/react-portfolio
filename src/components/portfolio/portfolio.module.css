@@ -18,7 +18,7 @@
     display: grid;
     margin-top: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center; 
+    justify-items: center;
     & .PortfolioItem {
       margin-top: 10px;
       & .PortfolioName {
@@ -57,6 +57,34 @@
         & img {
           width: 500px;
           height: 500px;
+          transition: width 0.5s ease;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .PortfolioContainer {
+    & .PortfolioItem {
+      & .PortfolioImage {
+        & img {
+          width: 450px;
+          height: 450px;
+          transition: width 0.5s ease;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 470px) {
+  .PortfolioContainer {
+    & .PortfolioItem {
+      & .PortfolioImage {
+        & img {
+          width: 200px;
+          height: 200px;
           transition: width 0.5s ease;
         }
       }

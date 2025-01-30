@@ -53,6 +53,7 @@ function Contact() {
   return (
     <div className={styles.ContactWrapper}>
       <div className={styles.ContactContainer}>
+        
         <div className={styles.ContactInfo}>
           <h3> Contact </h3> 
           <p className={styles.ContactAddress}>
