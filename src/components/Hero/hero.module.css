@@ -14,7 +14,7 @@
         font-size: 32px;
       }
       & .HeroName {
-        font-size: 64px;
+        font-size: 4em;
         font-weight: bold;
         color: #0085ff;
       }
@@ -60,6 +60,7 @@
   & .HeroInfo {
     margin-left: 100px;
     transition: margin-left 0.5s ease;
+
     /* } */
   }
 }
@@ -91,9 +92,25 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .HeroWrapper,
+  & .Container,
+  & .HeroCon,
+  & .HeroInfo {
+    & .HeroName {
+      font-size: 3em !important;
+    }
+  }
+}
+
 @media screen and (max-width: 430px) {
-  & .HeroJobDetail {
-    font-size: 14px;
-    margin-right: 20px;
+  & .HeroInfo {
+    & .HeroJobDetail {
+      font-size: 14px;
+      margin-right: 20px;
+    }
+    & .HeroName {
+      font-size: 2em !important;
+    }
   }
 }

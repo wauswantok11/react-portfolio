@@ -1,0 +1,14 @@
+.PortfolioPageWrapper {
+    & .PortfolioPageTitle {
+        height: 100px;
+        width: 100% !important;
+        overflow: hidden;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+
+        & p {
+            font-size: 64px;
+        }
+    }
+}

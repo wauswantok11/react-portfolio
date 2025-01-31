@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-nav { 
+nav {
   background-color: #0085ff;
   overflow: hidden;
   position: relative;
-  & a {
+  & ul, li {
     color: #fff;
   }
 
-  & .MobileMenuBars{
+  & .MobileMenuBars {
     position: absolute;
     color: #ffffff;
     right: 20px;
@@ -28,6 +28,7 @@ nav {
 
     & .NavLogo {
       & a {
+        color: #fff;
         text-decoration: none;
         font-weight: bold;
       }
@@ -39,68 +40,96 @@ nav {
       & li {
         margin: 0 35px;
         & a {
-            text-decoration: none;
+          text-decoration: none;
         }
       }
     }
 
     & .btnHireMe {
-        width: 100px;
-        height: 35px;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        transition: 0.3s;
-        cursor: pointer;
-        font-weight: bold;
-        &:hover{
-            box-shadow: 0 0 20px 0px rgba(0,0,0,0.3) ;
-        }
-        & a {
-          text-decoration: none;
-          color: #333;
-        }
-        & svg{
-          margin-right: 5px;
-        }
+      width: 100px;
+      height: 35px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      transition: 0.3s;
+      cursor: pointer;
+      font-weight: bold;
+      &:hover {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+      }
+      & a {
+        text-decoration: none;
+        color: #333;
+      }
+      & svg {
+        margin-right: 5px;
+      }
     }
-    & .SetColorTheme{
-      & svg { 
+    & .SetColorTheme {
+      & svg {
         font-size: 20px;
       }
-    } 
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  .conteiner {
+    & .navbarBar {
+      & .NavLogo {
+        margin-left: 50px;
+        transition: margin-left 0.5s ease;
+      }
+      & .btnHireMe {
+        margin-right: 50px;
+        transition: margin-right 0.5s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .conteiner {
+    & .navbarBar {
+      & .NavLogo {
+        margin-left: 30px;
+        transition: margin-left 0.5s ease;
+      }
+      & .btnHireMe {
+        margin-right: 30px;
+        transition: margin-right 0.5s ease;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 820px) {
-  & .navbarBar{
+  & .navbarBar {
     flex-direction: column;
     height: auto !important;
     margin: 50px 0;
     align-items: start !important;
     margin-left: 30px;
 
-    & ul , .btnHireMe{
+    & ul,
+    .btnHireMe {
       display: none !important;
     }
-
   }
-  & .MobileListMenuBars{
+ 
+  & .MobileListMenuBars {
     list-style: none;
-
+    margin-left: 25px;
     & li {
       margin: 35px;
-      & a{
-        text-decoration: none;
-        font-weight: bold;
-      }
+      text-decoration: none;
+      font-weight: bold;
     }
-  
   }
-  & .MobileBtnHireMe{
-    margin: 35px;
+  & .MobileBtnHireMe {
+    margin-left: 50px;
+    margin-bottom:30px;
     font-weight: bold;
     width: 100px;
     height: 35px;
@@ -109,10 +138,10 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    & svg{
+    & svg {
       margin-right: 5px;
     }
-    & a{
+    & a {
       color: #000000;
       text-decoration: none;
     }
@@ -120,7 +149,9 @@ nav {
 }
 
 @media screen and (min-width: 821px) {
-  & .MobileListMenuBars, .MobileBtnHireMe, .MobileMenuBars{
+  & .MobileListMenuBars,
+  .MobileBtnHireMe,
+  .MobileMenuBars {
     display: none;
   }
 }

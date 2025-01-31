@@ -3,6 +3,8 @@ import styles from './hero.module.css'
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { TypeAnimation } from 'react-type-animation';
+import Tilt from 'react-parallax-tilt';
 
 function hero (){ 
     return (
@@ -17,7 +19,19 @@ function hero (){
                             ADUL VASUVANTOK
                         </h3>
                         <p className={styles.HeroPosition}>
-                            I'm a Full Stack Developer
+                            <span style={{marginRight: "7px"}}>I'm a</span>
+                            <TypeAnimation
+                                sequence={[
+                                    'Back-end Developer',
+                                    1000, 
+                                    'Front-end Developer',
+                                    1000,
+                                    'Full Stack Developer',
+                                    1000, 
+                                ]}
+                                 speed={50}
+                                 repeat={Infinity} 
+                                />
                         </p>
                         <p className={styles.HeroJobDetail}>
                             
@@ -38,10 +52,11 @@ function hero (){
                             </li>
                         </ul>
                     </div>
-
-                    <div className={styles.HeroBoxImages}> 
-                        <div  className={styles.HeroImages}></div>
-                    </div>
+                    <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
+                        <div className={styles.HeroBoxImages}> 
+                            <div  className={styles.HeroImages}></div>
+                        </div>
+                    </Tilt>
                 </div>
             </div>
         </div>

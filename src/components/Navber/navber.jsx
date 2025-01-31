@@ -1,29 +1,33 @@
-import React ,{useState} from "react";
+import React ,{useState} from "react"; 
+import PortfolioPage from "../Pages/PortfolioPage/PortfolioPage";
 import styles from "./navber.module.css";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 
-const navber = () => {
+const navber = ({page, setPage}) => {
   const [isToggle, setToggle] = useState(false);
   function handleToggle(){
     setToggle(!isToggle)
   }
+  // const [page, setPage] = useState("/")
+ 
   return (
+    <>
     <nav>
       <div className={styles.conteiner}>
         <div className={styles.navbarBar}>
           <div className={styles.NavLogo} >
-            <a href="#"> PORTFOLIO </a>
+            <a onClick={()=> setPage("HomePage")}  role="button" tabIndex={0}> PORTFOLIO </a>
           </div>
           <ul>
-            <li> 
-              <a href="#"> Skills </a>
+          <li onClick={()=> setPage("SkillsPage")}  role="button" tabIndex={0}>   
+                Skills 
+              </li>
+            <li onClick={() => setPage("portfolioPage")} role="button" tabIndex={0}>
+              Portfolio
             </li>
-            <li>
-                <a href="#" > Portfolio </a>
-            </li>
-            <li>
-                <a href="#" > Contact </a>
+            <li onClick={()=> setPage("ContactPage")} role="button" tabIndex={0}>
+              Contact  
             </li>
           </ul> 
           <div className={styles.btnHireMe}>
@@ -35,14 +39,14 @@ const navber = () => {
         {isToggle ? (
           <>
             <ul className={styles.MobileListMenuBars}>
-              <li> 
-                <a href="#"> Skills </a>
+              <li onClick={()=> setPage("SkillsPage")}>   
+                Skills 
               </li>
-              <li>
-                  <a href="#" > Portfolio </a>
+              <li onClick={() => setPage("portfolioPage")} role="button" tabIndex={0}>
+                Portfolio
               </li>
-              <li>
-                  <a href="#" > Contact </a>
+              <li onClick={()=> setPage("ContactPage")} role="button" tabIndex={0}>
+                Contact  
               </li>
             </ul> 
             <div className={styles.MobileBtnHireMe}>
@@ -52,6 +56,7 @@ const navber = () => {
         ): null}
       </div>
     </nav>
+    </>
   );
 };
 
