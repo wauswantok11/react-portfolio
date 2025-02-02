@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
  
 nav {
-
-
   background-color: #0085ff;
   overflow: hidden;
   position: relative;
@@ -53,6 +51,7 @@ nav {
 
     /* css BtnChangeSwitch */
     & .DivChangeSwitch { 
+      display: inline-flex;
       & .FormChangeSwitch {
         & .InputLabelLanguage {
           color: #fff;
@@ -97,6 +96,7 @@ nav {
     }
   }
 }
+
 @media screen and (max-width: 1250px) {
   .conteiner {
     & .navbarBar {
@@ -136,7 +136,7 @@ nav {
     margin-left: 30px;
 
     & ul,
-    .btnHireMe {
+    .DivChangeSwitch {
       display: none !important;
     }
   }
@@ -189,7 +189,7 @@ nav {
 @media screen and (min-width: 821px) {
   & .MobileListMenuBars,
   .MobileMenuBars,
-  .MobileDivChangeSwitch {
+  .MobileDivChangeSwitch{
     display: none;
   }
 }

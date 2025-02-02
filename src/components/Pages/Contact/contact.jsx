@@ -1,11 +1,15 @@
 import React from 'react'
+import styles from './contact.module.scss'
+function ContactPage() {
+  const title = language === "thai" ? "ผลงาน" : "Portfolio";
 
-function contact() {
   return (
-    <div>
-      
+    <div className={styles.ContactPageWrapper}>
+      <div className={styles.ContactPageTitle}>
+        <p>{title}</p>
+      </div>
     </div>
   )
 }
 
-export default contact
+export default ContactPage

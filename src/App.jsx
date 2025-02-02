@@ -8,12 +8,12 @@ import Portfolio from './components/portfolio/portfolio'
 import Number from './components/Number/number'
 import Biz from './components/biz/biz'
 import Footer from './components/Footer/Footer'
-import Contact from './components/Contact/Contact'
-// import AnimatedCursor from 'react-animated-cursor'
+import Contact from './components/Contact/Contact' 
 import PortfolioPage from './components/Pages/PortfolioPage/PortfolioPage'
 import SkillsPage from './components/Pages/SkillPage/SkillsPage';
+import ContactPage from './components/Pages/Contact/contact';
 function App() {
-  const [page, setPage] = useState("HomePage"); // State to manage page selection
+  const [page, setPage] = useState("HomePage"); 
   const [language, setLanguage] = useState("thai");
   return (
     <> 
@@ -21,6 +21,7 @@ function App() {
       {
         page === "portfolioPage" ? <PortfolioPage language={language} /> :
           page === "SkillsPage" ? <SkillsPage /> :
+            page === "ContactPage" ? <ContactPage /> :
             page === "HomePage" ? (
               <>
                 <Hero language={language} />

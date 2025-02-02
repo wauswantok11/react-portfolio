@@ -8,15 +8,11 @@ const Contact =({language}) => {
   const Contact = language === "thai" ? "ติดต่อ" : "Contact"
   const phone = language === "thai" ? "092-4994561" : "(+66) 92 499 4561"
   const address = language === "thai" ? "91 เพชรเกษม ซอย 12/1 หาดใหญ่ สงขลา 90110" : "  91 Phetkasem 12/1 HatYai Songkhla, Thailand 90110"
-
-
   const ForeName = language === "thai" ? "ขื่อ" : "First name"
   const ForeLast = language === "thai" ? "นามสกุล" : "Last name"
   const ForeEmail = language === "thai" ? "อีเมล" : "Email Address"
   const Message = language === "thai" ? "ข้อความ" : "Your Message"
   const Submit =language ==="thai" ? "ยืนยัน" :"Submit"
-
-
   const emailMe = "adul.vasuvantok@gmail.com"
   const cols = 30
   const rows = 10
@@ -25,18 +21,16 @@ const Contact =({language}) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
-
   const validate = () => {
     const newErrors = {};
-
-    if (!fname) newErrors.fname = "First name is required.";
-    if (!lname) newErrors.lname = "Last name is required.";
+    if (!fname) newErrors.fname = language === "thai" ? "กรุณากรอก ชื่อ" : "First name is required.";
+    if (!lname) newErrors.lname = language === "thai" ? "กรุณากรอก นามสกุล" : "Last name is required.";
     if (!email) {
-      newErrors.email = "Email is required.";
+      newErrors.email = language === "thai" ? "กรุณากรอก อีเมล" : "Email is required.";
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Email is invalid.";
+      newErrors.email = language === "thai" ? "กรุณากรอก อีเมล" :  "Email is invalid.";
     }
-    if (!message) newErrors.message = "Message is required.";
+    if (!message) newErrors.message = language === "thai" ? "กรุณากรอก ข้อความ" : "Message is required.";
 
     return newErrors;
   };
@@ -44,13 +38,19 @@ const Contact =({language}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const newErrors = validate();
+    const MessageSubmit = language === "thai" ? "ส่งข้อความสำเร็จ" : "Message sent successfully"
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
       Swal.fire({
-        title: "Message sent successfully",
+        title: MessageSubmit,
         icon: "success",
-        draggable: true
+        draggable: true,
+        customClass: {
+          popup: "custom-swal-popup",
+          title: "custom-swal-title",
+          confirmButton: "custom-swal-button"
+        }
       });
       setFname("");
       setLname("");
@@ -101,7 +101,6 @@ const Contact =({language}) => {
               <label htmlFor="Your Message" >{Message} <span>*</span> </label>
               <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" id="message" cols={cols} rows={rows} placeholder='Message here' > </textarea>
               {errors.message && <span className={styles.ContactErrorMsg}>{errors.message}</span>}
-
             </div> 
             <button type="submit" name="btn_submit" id="btn_submit" > {Submit} </button>
           </form>

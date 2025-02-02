@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
  
 .ContactWrapper {
-  height: 500px;
+  height:550px;
   background-color: #0085ff;
   color: #fff;
   overflow: hidden;
@@ -57,7 +57,7 @@
       }
       & .ContactGroupInput {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         & label {
           font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
         }
@@ -68,6 +68,11 @@
           padding: 15px;
           border: none;
           outline: none;
+        }
+        & .ContactErrorMsg{
+          font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+          font-size: 12px;
+          color: #fff;
         }
       }
       & .ContactInputEmail {
@@ -82,6 +87,11 @@
           border: none;
           outline: none;
         }
+        & .ContactErrorMsg{
+          font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+          font-size: 12px;
+          color: #fff;
+        }
       }
       & .ContactInputMessage {
         & label {
@@ -93,6 +103,11 @@
           border-radius: 5px;
           padding-top: 10px;
           padding-left: 15px;
+        }
+        & .ContactErrorMsg{
+          font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+          font-size: 12px;
+          color: #fff;
         }
       }
       & button {
@@ -115,6 +130,12 @@
       }
     }
   }
+  & .custom-swal-title {
+    font-size: 20px  !important;;
+    font-weight: bold  !important;
+    font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed " !important; ;
+  }
+
 }
 
 @media screen and (max-width: 1290px) {

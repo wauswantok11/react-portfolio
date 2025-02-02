@@ -6,6 +6,14 @@ import Select from '@mui/material/Select';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
+import { ColorPicker , ColorBox} from "material-ui-color";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  root: {
+    border: "1px solid red"
+  }
+});
 
 const Navbar = ({ page, setPage , language, setLanguage }) => {
   const [isToggle, setToggle] = useState(false);
@@ -17,22 +25,18 @@ const Navbar = ({ page, setPage , language, setLanguage }) => {
     setLanguage(event.target.value);
   };
   
-  let titleSkills
-  let titleContact
-  let titlePortfolio
-  let titleLanguage
-  if (language === "thai") {
-    titleLanguage ="ภาษา"
-    titleSkills = "ทักษะการทำงาน"
-    titlePortfolio = "ผลงาน"
-    titleContact = "ติดต่อ"
-  } else {
-    titleLanguage ="Language"
-    titleSkills = "Skills"
-    titlePortfolio = "Portfolio"
-    titleContact = "Contact"
-  }
+  const titleSkills = language === "thai" ? "ทักษะการทำงาน" : "Skills"
+  const titleContact = language === "thai" ? "ติดต่อ" : "Contact"
+  const titlePortfolio = language === "thai" ? "ผลงาน" : "Portfolio"
+  const titleLanguage = language === "thai" ? "ภาษา" : "Language"
+ 
+  const classes = useStyles();
 
+  const [color, setColor] = useState("");
+
+  const handleColorChange = (...args) => {
+    console.log(args);
+  };
 
   return (
     <>
@@ -64,7 +68,7 @@ const Navbar = ({ page, setPage , language, setLanguage }) => {
                   <MenuItem style={{ fontFamily: "IBM Plex Sans Condensed" }} value="eng">England</MenuItem>
                 </Select>
               </FormControl>
-            </div>
+            </div> 
 
           </div>
 
