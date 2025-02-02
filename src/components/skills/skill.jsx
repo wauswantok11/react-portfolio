@@ -9,10 +9,12 @@ import { FaAngular } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaDocker } from "react-icons/fa6";
 
-function skill() {
+const skill = ({ language }) => {
+  const SkillTitleText = language === "thai" ? "ทักษะ" : "My Skill";
+
   return (
     <div className={styles.SkillContainer}>
-        <h3 className={styles.SkillTitle}>My Skill</h3>
+        <h3 className={styles.SkillTitle}>{SkillTitleText}</h3>
         <ul className={styles.SkillList}>
           <li> <FaGolang /> </li>
           <li> <FaJsSquare /> </li>

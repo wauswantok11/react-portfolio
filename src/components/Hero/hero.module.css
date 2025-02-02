@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 .HeroWrapper {
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   & .Container {
     max-width: 1170px;
@@ -10,13 +13,24 @@
     justify-content: space-between;
     margin-top: 115px;
     & .HeroInfo {
+      & .HeroPosition{
+        & span{
+          margin-right: 7px;
+          font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
+        }
+      }
       & .HeroHi {
         font-size: 32px;
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
       }
       & .HeroName {
         font-size: 4em;
         font-weight: bold;
         color: #0085ff;
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
       }
       & .HeroPosition {
         font-size: 32px;
@@ -24,6 +38,8 @@
       & .HeroJobDetail {
         font-size: 16px;
         margin-top: 25px;
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
       }
       & .HeroSocial {
         display: flex;

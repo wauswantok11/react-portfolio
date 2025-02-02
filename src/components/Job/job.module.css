@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 .JobContainer {
   height: 600px;
   text-align: center;
@@ -6,6 +9,8 @@
     margin-top: 60px;
     font-weight: bold;
     font-size: 32px;
+    font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
   }
   & .JobContentList {
     margin-top: 110px;
@@ -30,6 +35,8 @@
     }
     & .JobContentDetail {
       font-size: 16px;
+      font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
     }
   }
 }

@@ -6,20 +6,27 @@ import { FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from 'react-type-animation';
 import Tilt from 'react-parallax-tilt';
 
-function hero (){ 
+const hero = ({ language }) => {
+    const textHi = language === "thai" ? "สวัสดี ฉันเอง" : "Hi, it's Me";
+    const textName = language === "thai" ? "อดุล วสุวรรธก" : "ADUL VASUVANTOK";
+    const textIma = language === "thai" ? "ฉันเป็น" : "I'm a";
+    const textJobTitle = language === "thai" ? "มีความเชี่ยวชาญในการพัฒนาแบ็กเอนด์ RESTful API โดยใช้ Golang และ MySQL" : "Proficient in RESTful API backend development using Golang and MySQL"
+    const textJobSubOne = language === "thai" ? "การจัดการ DevOps ขั้นพื้นฐาน" : "Basic DevOps management."
+    const textJobSubTwo = language === "thai" ? "จบศึกษาจากคณะวิทยาศาสตร์ มหาวิทยาลัยสงขลานครินทร์":"Graduated from the Faculty of Science Prince of Songkla University"
+    const textJobSubTree = language === "thai" ? "ปัจจุบันทำงานเป็น Software Engineer (Full Stack Developer) ที่ บริษัท INET Thailand": "Currently working as a Software Engineer (Full Stack Developer) at INET Thailand."
     return (
         <div className={styles.HeroWrapper}>
             <div className={styles.Container}>
                 <div className={styles.HeroCon}>
                     <div className={styles.HeroInfo}>
                         <p className={styles.HeroHi}> 
-                            Hi, it's Me
+                            {textHi}
                         </p>
                         <h3 className={styles.HeroName}>
-                            ADUL VASUVANTOK
+                            {textName}
                         </h3>
                         <p className={styles.HeroPosition}>
-                            <span style={{marginRight: "7px"}}>I'm a</span>
+                            <span>{textIma}</span>
                             <TypeAnimation
                                 sequence={[
                                     'Back-end Developer',
@@ -34,11 +41,10 @@ function hero (){
                                 />
                         </p>
                         <p className={styles.HeroJobDetail}>
-                            
-                            Proficient in RESTful API backend development using Golang and MySQL
-                            <br />Basic DevOps management.
-                            <br />Studied Faculty of Science at the Prince of Songkla University, Thailand 
-                            <br />Software Engineer (Full Stack Developer) at INET Thailand
+                            {textJobTitle}
+                            <br />{textJobSubOne}
+                            <br />{textJobSubTwo} 
+                            <br />{textJobSubTree}
                         </p>
                         <ul className={styles.HeroSocial}>
                             <li>

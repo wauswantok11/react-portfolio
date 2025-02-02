@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 .BizContainer {
   height: 500px;
   background-color: #fff;
@@ -8,6 +11,8 @@
     margin-top: 55px;
     font-size: 32px;
     font-weight: bold;
+    font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
   }
 
   & .BizList {
@@ -26,10 +31,12 @@
         margin: 20px;
       }
       & h4 {
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
         font-size: 24px;
         font-weight: bold;
       }
       & p {
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
         font-size: 18px;
         font-weight: bold;
       }

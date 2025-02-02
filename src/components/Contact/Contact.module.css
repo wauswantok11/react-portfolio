@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 .ContactWrapper {
   height: 500px;
   background-color: #0085ff;
@@ -10,26 +13,37 @@
     justify-content: space-between;
     & .ContactInfo {
       width: 420px;
+      
       & h3 {
         font-size: 32px;
         font-weight: bold;
         margin-bottom: 25px;
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
       }
       & .ContactDetail {
         margin-bottom: 25px;
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
       }
       & .ContactAddress {
         margin-bottom: 20px;
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
       }
       & .ContactPhone,
       .ContactEmail {
         margin-bottom: 10px;
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
         & svg {
           margin-right: 5px;
         }
       }
     }
     & .ContactForm {
+      font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
       width: 520px;
       /* outline: 1px solid #333; */
       & span {
@@ -44,7 +58,9 @@
       & .ContactGroupInput {
         display: flex;
         justify-content: space-between;
-
+        & label {
+          font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+        }
         & input {
           width: 250px;
           height: 40px;
@@ -55,6 +71,9 @@
         }
       }
       & .ContactInputEmail {
+        & label {
+          font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+        }
         & input {
           width: 100%;
           height: 40px;
@@ -65,6 +84,9 @@
         }
       }
       & .ContactInputMessage {
+        & label {
+          font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+        }
         & textarea {
           width: 100%;
           height: 100px;
@@ -74,6 +96,7 @@
         }
       }
       & button {
+        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
         width: 100px;
         height: 40px;
         border-radius: 5px;
@@ -144,6 +167,7 @@
         overflow: hidden; 
         & .ContactGroupInput {
           & .ContactInput {
+            font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
             & input {
               width: 100%;
             }
