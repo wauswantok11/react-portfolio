@@ -20,8 +20,8 @@ function App() {
       <Navber page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
       {
         page === "portfolioPage" ? <PortfolioPage language={language} /> :
-          page === "SkillsPage" ? <SkillsPage /> :
-            page === "ContactPage" ? <ContactPage /> :
+          page === "SkillsPage" ? <SkillsPage language={language}/> :
+            page === "ContactPage" ? <ContactPage language={language}/> :
             page === "HomePage" ? (
               <>
                 <Hero language={language} />
