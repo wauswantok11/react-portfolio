@@ -1,6 +1,6 @@
 import './App.css'
 import React, { useState } from "react";
-import Navber from './components/Navber/Navber'
+import Navber from './components/Navber/navber'
 import Hero from './components/Hero/hero'
 import Skill from './components/skills/skill'
 import Job from './components/Job/job'
