@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./SkillsPage.module.scss";
-function SkillsPage() {
+const SkillsPage = ({language}) => {
+  const title = language === "thai" ? "ทักษะ" : "Skills";
+
   return (
     <div className={styles.SkillPageWrapper}>
       <div className={styles.SkillPagerTitle}>
-        <p> Skills </p>
+        <p> {title} </p>
       </div>
     </div>
   );

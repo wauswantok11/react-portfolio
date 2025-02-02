@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './contact.module.scss'
-function ContactPage() {
-  const title = language === "thai" ? "ผลงาน" : "Portfolio";
+const ContactPage = ({language}) => {
+  const title = language === "thai" ? "ช่องทางการติดต่อ" : "Contact";
 
   return (
     <div className={styles.ContactPageWrapper}>

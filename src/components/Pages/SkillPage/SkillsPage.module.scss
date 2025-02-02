@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 .SkillPageWrapper {
     & .SkillPagerTitle {
-        height: 100px;
+        height: 200px;
         width: 100% !important;
         overflow: hidden;
         display: flex;
@@ -8,6 +11,8 @@
         align-items: center;
 
         & p {
+            // font-weight: bold;
+            font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
             font-size: 64px;
         }
     }
