@@ -1,10 +1,5 @@
 import React from 'react'
-import styles from './portfolio.module.css'
-import eduPauImage from '../../assets/image/edu-pau.png';
-import dataCoop from '../../assets/image/datacoop.jpg'
-import um from '../../assets/image/um.png'
-import stateless from '../../assets/image/stateless.png'
-import ekyc from '../../assets/image/ekyc.png'
+import styles from './portfolio.module.css' 
 import Tilt from 'react-parallax-tilt';
 
 const portfolio = ({language}) => {
@@ -17,7 +12,7 @@ const portfolio = ({language}) => {
             <div className={styles.PortfolioItem}> 
                 <Tilt transitionSpeed={2500} tiltReverse={true}>
                     <div className={styles.PortfolioImage}>
-                        <img src={eduPauImage} alt='eduManual' />
+                        <img src="/image/edu-pau.png" alt='eduManual' />
                     </div>
                 </Tilt>
                 <div className={styles.PortfolioName}> 
@@ -28,7 +23,7 @@ const portfolio = ({language}) => {
             <div className={styles.PortfolioItem}>
                 <Tilt transitionSpeed={2500} tiltReverse={true}>
                     <div className={styles.PortfolioImage}>
-                        <img src={dataCoop} alt="dataCoop" />
+                        <img src="/image/datacoop.jpg" alt="dataCoop" />
                     </div>               
                 </Tilt>
                 <div className={styles.PortfolioName}> 
@@ -39,7 +34,7 @@ const portfolio = ({language}) => {
             <div className={styles.PortfolioItem}>
                 <Tilt transitionSpeed={2500} tiltReverse={true}>
                     <div className={styles.PortfolioImage}>
-                        <img src={um} alt="um" /> 
+                        <img src="/image/um.png" alt="um" /> 
                     </div>
                 </Tilt>
                 <div className={styles.PortfolioName}> 
@@ -50,7 +45,7 @@ const portfolio = ({language}) => {
             <div className={styles.PortfolioItem}>
                 <Tilt transitionSpeed={2500} tiltReverse={true}>
                     <div className={styles.PortfolioImage}>
-                        <img src={stateless} alt="stateless" />  
+                        <img src="/image/stateless.png" alt="stateless" />  
                     </div>
                 </Tilt>
                 <div className={styles.PortfolioName}> 
@@ -61,7 +56,7 @@ const portfolio = ({language}) => {
             <div className={styles.PortfolioItem}>
                 <Tilt transitionSpeed={2500} tiltReverse={true}>
                     <div className={styles.PortfolioImage}>
-                        <img src={ekyc} alt="ekyc" />  
+                        <img src="/image/ekyc.png" alt="ekyc" />  
                     </div>
                 </Tilt>
                 <div className={styles.PortfolioName}> 

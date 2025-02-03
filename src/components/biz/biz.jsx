@@ -1,8 +1,5 @@
 import React from 'react'
-import styles from './biz.module.css'
-import PSU from '../../assets/image/PSULogo.png'
-import INET from '../../assets/image/INETLOGO.jpg'
-import THAIID from '../../assets/image/thaiID.png'
+import styles from './biz.module.css'  
 
 const biz =({language}) => {
     const Organizations = language === "thai" ? "องค์กรที่ร่วมงาน" :"Working Organizations"
@@ -28,21 +25,21 @@ const biz =({language}) => {
             
             <div className={styles.BizItem}>      
                 <p>{psuTitle}</p>
-                <img src={PSU} alt="PSU" />
+                <img src="/image/PSULogo.png" alt="PSU" />
                 <h4 className={styles.BizName}> {pusSubOne} </h4>
                 <p className={styles.BizPositing}> {pusSubTwo} </p>
             </div>
 
             <div className={styles.BizItem}>      
                 <p>{inet}</p>
-                <img src={INET} alt="INET" />
+                <img src="/image/INETLOGO.jpg" alt="INET" />
                 <h4 className={styles.BizName}> {inetSubOne} </h4>
                 <p className={styles.BizPositing}> {inetSubTwo} </p>
             </div>
 
             <div className={styles.BizItem}>      
                 <p>{one} </p>
-                <img src={THAIID} alt="THAIID" />
+                <img src="/image/thaiID.png" alt="THAIID" />
                 <h4 className={styles.BizName}> {oneSubOne} </h4>
                 <p className={styles.BizPositing}> {oneSubTwo} </p>
             </div>

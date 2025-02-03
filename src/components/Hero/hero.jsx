@@ -60,7 +60,7 @@ const hero = ({ language }) => {
                     </div>
                     <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
                         <div className={styles.HeroBoxImages}> 
-                            <div  className={styles.HeroImages}></div>
+                            <div className={styles.HeroImages}></div>
                         </div>
                     </Tilt>
                 </div>
