@@ -14,5 +14,5 @@ export default defineConfig({
     // strictPort: true,
     // host: true,
     // origin: "http://127.0.0.1:8080"
-  }
+  },
 })

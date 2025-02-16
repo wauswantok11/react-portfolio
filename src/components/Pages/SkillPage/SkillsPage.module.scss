@@ -1,19 +1,173 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
- 
+
 .SkillPageWrapper {
+    height: auto !important;
+    overflow: hidden;
+
     & .SkillPagerTitle {
         height: 200px;
         width: 100% !important;
-        overflow: hidden;
         display: flex;
-        justify-content: center; 
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
 
-        & p {
-            // font-weight: bold;
+        & h3 {
+            font-weight: bold;
             font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
             font-size: 64px;
+        }
+
+        & p {
+            font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+            font-size: 24px;
+        }
+    }
+
+    & .SkillPageContent {
+        & .SkillPageContentTitle {
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+            font-size: 24px;
+            font-weight: bold;
+            // margin-bottom: 20px;
+        }
+
+        & .SkillPageItem {
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px 50px;
+            margin-top: 50px;
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            & .SkillPageGauge {
+                padding: 0px 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: stretch;
+                flex-wrap: wrap;
+                position: relative;
+
+                & .SkillPageGaugeDetail {
+                    position: relative;
+                    width: 200px;
+                    height: 200px;
+                    & .SkillPageGaugeIcon {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 100%;
+                    }
+                }
+
+                & .SkillPageChart {
+                    z-index: 2;
+                }
+
+                & .SkillPageText {
+                    z-index: 2;
+
+                    & h1 {
+                        font-size: 24px;
+                        font-weight: bold;
+                        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+
+                    }
+
+                    & h4 {
+                        text-align: center;
+                    }
+
+                    & p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .SkillPageWrapper {
+        & .SkillPageContent {
+            & .SkillPageItem {
+                margin-top: 30px !important;
+                padding: 0px !important;
+                & .SkillPageGauge {
+                    padding: 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .SkillPageWrapper {
+        & .SkillPageContent {
+            & .SkillPageItem {
+                margin-top: 20px !important;
+                padding: 0px !important;
+                & .SkillPageGauge {
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .SkillPageWrapper {
+        & .SkillPageContent {
+            & .SkillPageItem {
+                margin-top: 20px !important;
+                padding: 0px !important;
+                & .SkillPageGauge {
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .SkillPageWrapper {
+        & .SkillPageContent {
+            & .SkillPageItem {
+                grid-template-columns: 1fr 1fr; 
+                display: grid !important;
+                margin-top: 0px !important;
+                padding: 0px !important;
+                & .SkillPageGauge {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .SkillPageWrapper {
+        & .SkillPageContent {
+            & .SkillPageItem {
+                grid-template-columns: 1fr; 
+                display: grid !important;
+                margin-top: 0px !important;
+                padding: 0px !important;
+                & .SkillPageGauge {
+                    margin: 0 20px;
+                }
+            }
         }
     }
 }

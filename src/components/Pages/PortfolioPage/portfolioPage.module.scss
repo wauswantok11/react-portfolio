@@ -1,19 +1,396 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
- 
+
 .PortfolioPageWrapper {
+    max-width: 1470px !important;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+
+    & .PortfolioPageImagesModal {
+        position: fixed;
+        z-index: 99;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+
+        & .PortfolioPageModelClose {
+            position: absolute;
+            top: 15px;
+            right: 80px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        & .PortfolioPageNumberOfPictures {
+            position: absolute;
+            transition: 0.3s;
+            top: 25px;
+            right: 200px;
+
+            width: 60px;
+            height: 30px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+            & p {
+                color: #000000;
+                font-weight: bold;
+                font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+            }
+
+        }
+
+        & .PortfolioPageImageFullModel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .PortfolioPageDropLeftModelImage {
+                margin-left: 60px;
+                font-size: 48px;
+                cursor: pointer;
+            }
+
+            & .PortfolioPageDropRightModelImage {
+                margin-right: 60px;
+                font-size: 48px;
+                cursor: pointer;
+            }
+
+            & img {
+                max-width: 100%;
+                height: 730px;
+                animation-duration: 0.6px;
+                animation-name: zoom;
+            }
+        }
+    }
+
     & .PortfolioPageTitle {
-        height: 200px;
-        width: 100% !important;
+        width: 100%;
         overflow: hidden;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
 
-        & p {
-            // font-weight: bold;
+        & h3 {
+            font-weight: bold;
             font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
             font-size: 64px;
+        }
+    }
+
+    & .PortfolioPageContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .PortfolioPageArrowBack,
+        .PortfolioPageArrowForward {
+
+            & .ArrowBack,
+            .ArrowForward {
+                width: 50px;
+
+                svg {
+                    font-weight: bold;
+                    font-size: 42px;
+                    width: 50px;
+                    cursor: pointer;
+                }
+
+                & :hover {
+                    transform: scale(1.1);
+                }
+
+                & :active {
+                    color: #0085ff;
+                }
+            }
+
+            & .ArrowBack {
+                float: left;
+            }
+
+            & .ArrowForward {
+                float: right;
+            }
+        }
+
+        & .PortfolioPageCard {
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 30px 1px rgba($color: #000000, $alpha: 0.50);
+            display: grid;
+            margin: 0 50px;
+            width: 100%;
+
+            & .PortfolioPageList {
+
+                & .PortfolioPageTitleContent {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+
+                    & h4 {
+                        color: black;
+                        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+                        font-weight: bold;
+                        font-size: 24px;
+
+                        & a {
+                            text-decoration: none;
+                            color: black;
+                            font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+                            font-weight: bold;
+                            font-size: 24px;
+                        }
+                    }
+
+                    & p {
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+                        font-size: 18px;
+                    }
+                }
+
+                & .PortfolioPageItem {
+                    max-width: 100% !important;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin-bottom: 20px;
+
+                    & .PortfolioPageItemDetail {
+                        max-width: 100% !important;
+                        margin: 0 20px;
+
+                        & h4,
+                        p,
+                        li,
+                        b {
+                            font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+                        }
+                    }
+
+                    & .PortfolioPageItemImage {
+                        max-width: 100%;
+
+                        & .PortfolioPageImage {
+                            width: 100%;
+
+                            & img {
+                                width: 550px;
+                                height: 550px;
+                                object-fit: cover;
+                                border-radius: 20px;
+                                box-shadow: 0 30px 50px rgba($color: #000000, $alpha: 0.20);
+                            }
+
+                            &:hover {
+                                & img {
+                                    transition: 0.5s;
+                                    opacity: 0.7;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    & .PortfolioPageContainerSlide {
+        & .PortfolioPageMailSlide {
+            & .PortfolioPageSlide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 25px 0;
+
+                & .PortfolioPageRecord {
+                    font-size: 24px;
+                    color: #484747;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .PortfolioPageWrapper {
+        & .PortfolioPageImagesModal {
+            & .PortfolioPageModelClose {
+                margin-right: 20px !important;
+                margin-top: 15px !important;
+            }
+
+            & .PortfolioPageNumberOfPictures {
+                margin-right: 20px !important;
+                margin-top: 10px !important;
+            }
+
+            & .PortfolioPageImageFullModel {
+                & .PortfolioPageDropLeftModelImage {
+                    margin-left: 20px;
+                    font-size: 48px;
+                }
+
+                & .PortfolioPageDropRightModelImage {
+                    margin-right: 20px;
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .PortfolioPageWrapper {
+        & .PortfolioPageImagesModal {
+            & .PortfolioPageModelClose {
+                margin-right: 20px !important;
+                margin-top: 15px !important;
+            }
+
+            & .PortfolioPageNumberOfPictures {
+                margin-right: 20px !important;
+                margin-top: 10px !important;
+            }
+
+            & .PortfolioPageImageFullModel {
+                & .PortfolioPageDropLeftModelImage {
+                    margin-left: 20px;
+                    font-size: 36px;
+                }
+
+                & .PortfolioPageDropRightModelImage {
+                    margin-right: 20px;
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .PortfolioPageWrapper {
+        & .PortfolioPageImagesModal {
+            & .PortfolioPageModelClose {
+                margin: 0px !important;
+            }
+
+            & .PortfolioPageNumberOfPictures {
+                margin: 0px !important;
+            }
+
+            & .PortfolioPageImageFullModel {
+                & .PortfolioPageDropLeftModelImage {
+                    margin-left: 20px;
+                    font-size: 36px;
+                }
+
+                & .PortfolioPageDropRightModelImage {
+                    margin-right: 20px;
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1390px) {
+    .PortfolioPageWrapper {
+        & .PortfolioPageImagesModal {
+            & .PortfolioPageImageFullModel {
+                & img {
+                    max-width: 90%;
+                    height: auto;
+                    animation-duration: 0.6px;
+                    animation-name: zoom;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1364px) {
+    .PortfolioPageWrapper {
+        & .PortfolioPageContent {
+            & .PortfolioPageCard {
+
+                & .PortfolioPageArrowBack, .PortfolioPageArrowForward {
+                    & .ArrowBack , .ArrowForward{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                    }
+         
+                }
+
+                
+                & .PortfolioPageList {
+                    & .PortfolioPageItem {
+                        display: grid !important;
+                        align-items: flex-start;
+
+                        & .PortfolioPageItemImage {
+                            order: 1;
+                            & .PortfolioPageImage {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center; 
+                            }
+                        }
+
+                        & .PortfolioPageItemDetail {
+                            order: 2;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .PortfolioPageWrapper {
+        & .PortfolioPageContent {
+            & .PortfolioPageCard {
+                & .PortfolioPageList {
+                    & .PortfolioPageItem {
+                        & .PortfolioPageItemImage {
+                            & .PortfolioPageImage {
+                               & img{
+                                max-width: 100%;
+                                height: auto;
+                               }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

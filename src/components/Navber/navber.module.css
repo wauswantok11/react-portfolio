@@ -41,7 +41,11 @@ nav {
       list-style: none;
       & li {
         font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
-
+        cursor: pointer;
+        &:hover{
+          color: #000000; 
+          font-weight: bold;
+        }
         margin: 0 35px;
         & a {
           text-decoration: none;
