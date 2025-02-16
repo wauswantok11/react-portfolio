@@ -85,6 +85,42 @@ const PortfolioPage = ({ language }) => {
   const title = language === "thai" ? "ผลงาน" : "Portfolio";
   const titleProjectIot = language === "thai" ? "ระบบ วัดคุณภาพน้ำอันโนมัติและแจ้งเตือนสำหรับบ่อกุ้งขาว" :"Automatic water quality measurement and notification system for white shrimp ponds"
   const subTitleProjectIot  = language === "thai" ?  "ผลงานสำหรับจบการศึกษา คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศต่อเนื่องมหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่" : "Work for graduation Faculty of Science Continuing Information Technology Program, Prince of Songkla University Hat Yai Campus"
+  const detailProjectIot = language === "thai" ? "พัฒนาระบบติดตามคุณภาพน้ำและเครื่องมือวัดคุณภาพน้ำด้วยอุปกรณ์ IoT พร้อมระบบแสดงผลข้อมูลแบบ Dashboard และติดตามสถานะอุปกรณ์แบบเรียลไทม์ เพื่อสนับสนุนการตัดสินใจของเกษตรกรผู้เลี้ยงกุ้ง โดยช่วยเพิ่มประสิทธิภาพในการจัดการคุณภาพน้ำ ลดภาระงาน และปรับปรุงผลผลิตให้มีคุณภาพสูงขึ้น" :"A water quality monitoring system and its supporting water quality measuring instruments are developed. Data Display System of Internet of Things Based on Dashboard And track that status of the equipment in real time. To support the decision-making of shrimp farmers So it is helpful to improve the efficiency of water quality management and reduce the workload. And improve the output with higher quality."
+  const titleDetailIot = language === "thai"? "เทคโนโลยีที่นำมาพัตนาอุปกรณ์และระบบ" :"Technology used to develop devices and systems" 
+  const devSystemIot = language === "thai" ? "ในส่วนของการพัตนาระบบ" :"Development of system."
+  const detailDevSystemIot =  language === "thai" ? "html css javascript สำหรับการสร้างหน้า UI และ การรับส่งข้อมูล" : "HTML, CSS, and JavaScript are used to create UI pages and data transmission"
+  const detailDevSystemIot1 =  language === "thai" ? "NodeJS Php Sql สำหรับการจัดการข้อมูลของระบบ" : "NodeJS Php Sql for system data management"
+  const detailDevSystemIot2 =  language === "thai" ? "MysqL สำหรับการจัดการฐานข้อมูลระบบ" : "MysqL for system database management"
+  const detailDevSystemIot3 =  language === "thai" ? "firebase realtime database สำหรับการแจ้งตือนข้อมูลแบบเรียวไทม" : "Firebase real-time database for timestamp notification"
+  const detailDevSystemIot4 =  language === "thai" ? "ในส่วนของการพัตนาอุปกรณ์ iot":"Development of IoT devices"
+  const detailDevSystemIot5 =  language === "thai" ?"Arduino IDE สำหรับการเขียน code เพื่อสั่งงานการทำงานใน อุปกรณ์ iot" : "Arduino IDE is used to write code to command tasks performed on IOT devices."
+  const detailDevSystemIot6 =  language === "thai" ?"Node-red สำหรับการจัดการอุปกรณ์" : "Node-red for device management."
+  const detailDevSystemIot7 =  language === "thai" ?"NodeMCU ESP8266 อุปกรณ์สำหรับการเชื่อต่อเซ็นเซอร์":"NodeMCU ESP8266, a device for connecting sensors"
+  const detailDevSystemIot8 =  language === "thai" ?" EC Sensor Turbidity sensor เซ็นเซอร์สำหรับ การวัดความขุ่นของน้ำ":"EC Sensor Turbidity sensor Sensor for measuring water turbidity"
+  const detailDevSystemIot9 =  language === "thai" ?"DS18B20 เซ็นเซอร์ สำหรับวัดอุณหภูมิน้ำ" : "DS18B20 Sensor for Water Temperature Measurement."
+  const detailDevSystemIot10 =  language === "thai" ? "Display Module จอแสดงผล LCD โมดูล":"Display Module LCD display module"
+  const detailDevSystemIot11 =  language === "thai" ? "ในส่วนของการจัดการ Server":"Server Management section"
+  const detailDevSystemIot12 =  language === "thai" ? "Private Server สำหรับการนำ โปรเจคขึ้น Production เพื่อใช้งานจริง":"Private Server for bringing projects to Production for actual use"
+  const edu1 = language === "thai" ? "ระบบ คู่มือการศึกษา มหาวิทยาลัยสงขลานครินทร์":"Handbook of the Education System at Prince Songkhla University."
+  const edu2 = language === "thai" ? "ผลงานสำหรับการฝึกงาน สำนักการศึกษาและนวัตกรรมการเรียนรู้ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่" :"Internship achievements of the Education and Learning Innovation Office at Prince Songkhla University Hat Yai Campus."
+  const edu3 = language === "thai" ? "การพัฒนาระบบคู่มือการศึกษาสำหรับนักศึกษามหาวิทยาลัยสงขลานครินทร์ในทุกระดับการศึกษา เพื่อแก้ปัญหาการอัพโหลดและดาวน์โหลดไฟล์คู่มือผ่านระบบ Admin โดยสามารถจัดการข้อมูลหลักสูตรได้ง่าย ระบบประกอบไปด้วยการพัฒนาหน้าบ้านสำหรับการดาวน์โหลดไฟล์ และระบบหลังบ้านสำหรับการอัพโหลดไฟล์" :"Develop an educational manual system for students at all levels of Prince Songkra University to solve the problem of uploading and downloading manual files through a management system. The system is easy to manage course information. The system includes front-end development for file downloads and back-end development for file uploads."
+  const edu4 = language === "thai" ? "ซึ่งสามารถแบ่งบทบาทผู้ใช้งานได้ 5 ระดับ ดังนี้":"Which can divide user roles into 5 levels as follows"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   const [openModelImage, setOpenModelImage] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentIndexModelImage , setCurrentIndexModelImage]= useState(0);
@@ -167,14 +203,7 @@ const PortfolioPage = ({ language }) => {
             <IoIosArrowBack onClick={prevSlide} />
           </div>
         </div>
-        <motion.div
-          key={keySlide[currentIndex]?.key }
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          className={styles.PortfolioPageCard}
-        >
+        <motion.div key={keySlide[currentIndex]?.key } initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} transition={{ duration: 0.5 }} className={styles.PortfolioPageCard} >
           {currentIndex === 0 && (
             <div className={styles.PortfolioPageList}>
               <div className={styles.PortfolioPageTitleContent}>
@@ -186,67 +215,45 @@ const PortfolioPage = ({ language }) => {
               <div className={styles.PortfolioPageItem}>
                 <div className={styles.PortfolioPageItemDetail}>
                   <p>
-                    พัฒนาระบบติดตามคุณภาพน้ำและเครื่องมือวัดคุณภาพน้ำด้วยอุปกรณ์
-                    IoT พร้อมระบบแสดงผลข้อมูลแบบ Dashboard
-                    และติดตามสถานะอุปกรณ์แบบเรียลไทม์
-                    เพื่อสนับสนุนการตัดสินใจของเกษตรกรผู้เลี้ยงกุ้ง
-                    โดยช่วยเพิ่มประสิทธิภาพในการจัดการคุณภาพน้ำ ลดภาระงาน
-                    และปรับปรุงผลผลิตให้มีคุณภาพสูงขึ้น
+                    {detailProjectIot}
                   </p>
                   <h4 style={{ marginTop: "20px" }}>
-                    เทคโนโลยีที่นำมาพัตนาอุปกรณ์และระบบ
+                    {titleDetailIot}
                   </h4>
                   <div style={{ marginLeft: "20px" }}>
-                    <h4> ในส่วนของการพัตนาระบบ </h4>
+                    <h4> {devSystemIot} </h4>
                     <ul>
                       <li>
-                        html css javascript สำหรับการสร้างหน้า UI และ
-                        การรับส่งข้อมูล
+                        {detailDevSystemIot}
                       </li>
-                      <li>NodeJS Php Sql สำหรับการจัดการข้อมูลของระบบ</li>
-                      <li>MysqL สำหรับการจัดการฐานข้อมูลระบบ</li>
-                      <li>
-                        firebase realtime database
-                        สำหรับการแจ้งตือนข้อมูลแบบเรียวไทม
-                      </li>
+                      <li>{detailDevSystemIot1}</li>
+                      <li>{detailDevSystemIot2}</li>
+                      <li>{detailDevSystemIot3}</li>
                     </ul>
-                    <h4> ในส่วนของการพัตนาอุปกรณ์ iot </h4>
+                    <h4> {detailDevSystemIot4} </h4>
                     <ul>
                       <li>
-                        Arduino IDE สำหรับการเขียน code เพื่อสั่งงานการทำงานใน
-                        อุปกรณ์ iot
+                        {detailDevSystemIot5}
                       </li>
-                      <li>Node-red สำหรับการจัดการอปกรณ์</li>
-                      <li>NodeMCU ESP8266 อุปกรณ์สำหรับการเชื่อต่อเซ็นเซอร์</li>
+                      <li>{detailDevSystemIot6}</li>
+                      <li>{detailDevSystemIot7}</li>
                       <li>
-                        EC Sensor Turbidity sensor เซ็นเซอร์สำหรับ
-                        การวัดความขุ่นของน้ำ
+                       {detailDevSystemIot8}
                       </li>
-                      <li>DS18B20 เซ็นเซอร์ สำหรับวัดอุณหภูมิน้ำ</li>
-                      <li>Display Module จอแสดงผล LCD โมดูล</li>
+                      <li>{detailDevSystemIot9}</li>
+                      <li>{detailDevSystemIot10}</li>
                     </ul>
-                    <h4> ในส่วนของการจัดการ Server </h4>
+                    <h4> {detailDevSystemIot11} </h4>
                     <ul>
                       <li>
-                        Private Server สำหรับการนำ โปรเจคขึ้น Production
-                        เพื่อใช้งานจริง
+                       {detailDevSystemIot12}
                       </li>
                     </ul>
                   </div>
                 </div>
-                {/* Images Content */}
                 <div className={styles.PortfolioPageItemImage}>
-                  <div
-                    className={styles.PortfolioPageImage}
-                    onClick={() => {
-                      setCurrentGroup("iot");
-                      handleOpenAndClose();
-                    }}
-                  >
-                    <img
-                      src="/image/project-iot/iot-1.jpeg"
-                      alt="image-iot-1"
-                    />
+                  <div className={styles.PortfolioPageImage} onClick={() => { setCurrentGroup("iot"); handleOpenAndClose(); }} >
+                    <img src="/image/project-iot/iot-1.jpeg" alt="image-iot-1" />
                   </div>
                 </div>
               </div>
@@ -255,81 +262,60 @@ const PortfolioPage = ({ language }) => {
           {currentIndex === 1 && (
             <div className={styles.PortfolioPageList}>
               <div className={styles.PortfolioPageTitleContent}>
-                <h4>
-                  {" "}
-                  <a href="https://edumanual.psu.ac.th/">
-                    ระบบ คู่มือการศึกษา มหาวิทยาลัยสงขลานครินทร์
-                  </a>
+                <h4> 
+                  <a href="https://edumanual.psu.ac.th/"> { edu1 } </a>
                 </h4>
-                <p>
-                  ผลงานสำหรับการฝึกงาน สำนักการศึกษาและนวัตกรรมการเรียนรู้
-                  มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่
-                </p>
+                <p>{ edu2 } </p>
               </div>
               <div className={styles.PortfolioPageItem}>
                 <div className={styles.PortfolioPageItemDetail}>
-                  <p>
-                    การพัฒนาระบบคู่มือการศึกษาสำหรับนักศึกษามหาวิทยาลัยสงขลานครินทร์ในทุกระดับการศึกษา
-                    เพื่อแก้ปัญหาการอัพโหลดและดาวน์โหลดไฟล์คู่มือผ่านระบบ Admin
-                    โดยสามารถจัดการข้อมูลหลักสูตรได้ง่าย
-                    ระบบประกอบไปด้วยการพัฒนาหน้าบ้านสำหรับการดาวน์โหลดไฟล์
-                    และระบบหลังบ้านสำหรับการอัพโหลดไฟล์
-                  </p>
+                  <p>{edu3}</p>
                   <p style={{ marginTop: "10px" }}>
-                    <b> ซึ่งสามารถแบ่งบทบาทผู้ใช้งานได้ 5 ระดับ ดังนี้ </b>
+                    <b> {edu4} </b>
                   </p>
                   <ul style={{ marginLeft: "20px", marginTop: "0" }}>
                     <li>
-                      <b>ซุปเปอร์แอดมิน</b>
-                      สามารถจัดการข้อมูลทั้งหมดภายในระบบและเพิ่มแอดมินเพื่อดูแลระบบ
+                      <b>{language === "thai" ? "ซุปเปอร์แอดมิน":"Super Admin"}</b>
+                      {language === "thai" ? "สามารถจัดการข้อมูลทั้งหมดภายในระบบและเพิ่มแอดมินเพื่อดูแลระบบ":"You can manage all data within the system and add admins to manage the system."}
                     </li>
                     <li>
-                      <b>แอดมิน</b>{" "}
-                      สามารถจัดการข้อมูลภายในระบบและดูสถิติการอัพโหลดไฟล์ในแต่ละหลักสูตร
+                      <b>{language === "thai" ? "แอดมิน":"Admin"}</b>
+                      {language === "thai" ? "สามารถจัดการข้อมูลภายในระบบและดูสถิติการอัพโหลดไฟล์ในแต่ละหลักสูตร":"Can manage data within the system and view file upload statistics in each course."}
                     </li>
                     <li>
-                      <b>แอดมินประจำวิทยาเขต</b>{" "}
-                      สามารถจัดการข้อมูลหลักสูตรและเพิ่มแอดมินประจำคณะภายใต้วิทยาเขตของตนเอง
+                      <b>{language === "thai" ? "แอดมินประจำวิทยาเขต":"Campus Admin"}</b>
+                      {language === "thai" ?"สามารถจัดการข้อมูลหลักสูตรและเพิ่มแอดมินประจำคณะภายใต้วิทยาเขตของตนเอง":"Ability to manage course information and add teacher administrators within their own campus."}
                     </li>
                     <li>
-                      <b>แอดมินประจำคณะ</b>{" "}
-                      สามารถจัดการข้อมูลหลักสูตรภายใต้คณะของตนเอง
+                      <b>{language === "thai" ? "แอดมินประจำคณะ":"Faculty Admin"}</b>
+                      {language === "thai" ? "สามารถจัดการข้อมูลหลักสูตรภายใต้คณะของตนเอง":"Ability to manage course information under your own team." }
                     </li>
                     <li>
-                      <b>ผู้บริหาร</b> สามารถดูข้อมูลเชิงสถิติและเข้าถึงฟังก์ชัน
-                      Dashboard
+                      <b>{language === "thai" ? "บริหาร":"Management"}</b> 
+                      {language === "thai" ? "สามารถดูข้อมูลเชิงสถิติและเข้าถึงฟังก์ชัน Dashboard":"Can view statistics and access Dashboard function"} 
                     </li>
                   </ul>
 
                   <p style={{ marginTop: "10px" }}>
-                    {" "}
-                    <b> หน้าที่ที่ได้รับมอบหมาย </b>{" "}
+                    <b>{language === "thai" ? "หน้าที่ที่ได้รับมอบหมาย":"Responsibilities assigned."}</b>
                   </p>
                   <ul style={{ marginLeft: "20px" }}>
-                    <li>
-                      {" "}
-                      ดูแลและแก้ไขปัญหาที่เกิดขึ้นในระบบหรือเกี่ยวข้องกับระบบได้
+                    <li> 
+                      {language === "thai" ? "ดูแลและแก้ไขปัญหาที่เกิดขึ้นในระบบหรือเกี่ยวข้องกับระบบได้":"Manage and resolve issues that occur in the system or are related to the system."}  
                     </li>
-                    <li>
-                      {" "}
-                      พัฒนาระบบสร้างฟีเจอร์ใหม่ั้งในส่วนของ Back-end และ
-                      Front-end อย่างครบถ้วน
+                    <li> 
+                        {language === "thai" ? "พัฒนาระบบสร้างฟีเจอร์ใหม่ั้งในส่วนของ Back-end และ Front-end อย่างครบถ้วน":"Develop new features for both the backend and frontend. "}
                     </li>
-                    <li>
-                      {" "}
-                      รับ Requirement ใหม่และแก้ปัญหาที่เกิดขึ้นจากผู้ใช้งาน
-                      ทดแทนในส่วยของ SA
+                    <li> 
+                      {language === "thai" ? "รับ Requirement ใหม่และแก้ปัญหาที่เกิดขึ้นจากผู้ใช้งาน ทดแทนในส่วยของ SA":"Obtain new requirements and solve the problems that users encounter when paying tribute to SA."}
                     </li>
-                    <li> ออกแบบการทำงานและ UX/UI ของระบบทดแทนในส่วยของ SA </li>
-                    <li> ควบคุมการทำงานให้เสร็จก่อนระยะเวลาที่กำหนด </li>
+                    <li> {language === "thai" ? "ออกแบบการทำงานและ UX/UI ของระบบทดแทนในส่วยของ SA ":"Design the functionality and UX/UI of the SA replacement system."} </li>
+                    <li> {language === "thai" ? "ควบคุมการทำงานให้เสร็จก่อนระยะเวลาที่กำหนด":"Complete the work within the specified time."} </li>
                   </ul>
                 </div>
                 <div className={styles.PortfolioPageItemImage}>
-                  <div className={styles.PortfolioPageImage} onClick={() => {
-                      setCurrentGroup("edu");
-                      handleOpenAndClose();
-                    }}>
-                    <img src="/image/project-edu/edu-1.jpeg" />
+                  <div className={styles.PortfolioPageImage} onClick={() => { setCurrentGroup("edu"); handleOpenAndClose(); }}>
+                    <img src="/image/project-edu/edu-1.jpeg" alt="edu" /> 
                   </div>
                 </div>
               </div>
