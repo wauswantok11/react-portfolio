@@ -20,20 +20,64 @@ const imageGroups = {
   ],
   "edu": [
     "/image/project-edu/edu-1.jpeg", 
+    "/image/project-edu/edu-2.png", 
+    "/image/project-edu/edu-3.png", 
+    "/image/project-edu/edu-4.png", 
+    "/image/project-edu/edu-5.jpeg", 
+    "/image/project-edu/edu-6.jpeg", 
+    "/image/project-edu/edu-7.jpeg", 
+    "/image/project-edu/edu-8.jpeg", 
+    "/image/project-edu/edu-9.jpeg", 
   ],
   "coop": [
+    "/image/project-coop/coop-0.jpeg", 
     "/image/project-coop/coop-1.jpeg", 
+    "/image/project-coop/coop-2.jpeg", 
+    "/image/project-coop/coop-3.jpeg", 
+    "/image/project-coop/coop-4.jpeg", 
+    "/image/project-coop/coop-5.jpeg", 
+    "/image/project-coop/coop-6.jpeg", 
+    "/image/project-coop/coop-7.jpeg", 
+    "/image/project-coop/coop-8.jpeg", 
+    "/image/project-coop/coop-9.jpeg", 
+    "/image/project-coop/coop-10.jpeg", 
+    "/image/project-coop/coop-11.jpeg", 
+    "/image/project-coop/coop-12.jpeg", 
+
   ],
   "stateless":[
     "/image/project-stateless/stateless-1.png", 
+    "/image/project-stateless/stateless-2.png", 
+    "/image/project-stateless/stateless-3.png", 
+    "/image/project-stateless/stateless-4.png", 
+    "/image/project-stateless/stateless-5.png", 
+    "/image/project-stateless/stateless-6.png", 
+    "/image/project-stateless/stateless-7.png", 
+    "/image/project-stateless/stateless-8.png", 
   ],
   "um":[
     "/image/project-um/um-1.png",
-    "/image/project-um/um-2.png"
+    "/image/project-um/um-2.png",
+    "/image/project-um/um-3.png",
+    "/image/project-um/um-4.png",
+    "/image/project-um/um-5.png",
+    "/image/project-um/um-6.png",
+    "/image/project-um/um-7.png",
+    "/image/project-um/um-8.png",
+    "/image/project-um/um-9.png",
+    "/image/project-um/um-10.png",
   ],
   "ekyc":[
     "/image/project-ekyc/ekyc-1.png",
     "/image/project-ekyc/ekyc-2.png",
+    "/image/project-ekyc/ekyc-3.png",
+    "/image/project-ekyc/ekyc-4.png",
+    "/image/project-ekyc/ekyc-5.png",
+    "/image/project-ekyc/ekyc-6.png",
+    "/image/project-ekyc/ekyc-7.png",
+    "/image/project-ekyc/ekyc-8.png",
+    "/image/project-ekyc/ekyc-9.png",
+    "/image/project-ekyc/ekyc-10.png",
   ]
 }
 
@@ -369,7 +413,7 @@ const PortfolioPage = ({ language }) => {
                       setCurrentGroup("coop");
                       handleOpenAndClose();
                     }}>
-                    <img src="/image/project-coop/coop-1.jpeg" />
+                    <img src="/image/project-coop/coop-0.jpeg" />
                   </div>
                 </div>
               </div>
