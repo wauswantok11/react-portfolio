@@ -237,160 +237,160 @@
     }
 }
 
-@media screen and (max-width: 1550px) {
-    .PortfolioPageWrapper {
-        & .PortfolioPageImagesModal {
-            & .PortfolioPageModelClose {
-                margin-right: 20px !important;
-                margin-top: 15px !important;
-            }
+// @media screen and (max-width: 1550px) {
+//     .PortfolioPageWrapper {
+//         & .PortfolioPageImagesModal {
+//             & .PortfolioPageModelClose {
+//                 margin-right: 20px !important;
+//                 margin-top: 15px !important;
+//             }
 
-            & .PortfolioPageNumberOfPictures {
-                margin-right: 20px !important;
-                margin-top: 10px !important;
-            }
+//             & .PortfolioPageNumberOfPictures {
+//                 margin-right: 20px !important;
+//                 margin-top: 10px !important;
+//             }
 
-            & .PortfolioPageImageFullModel {
-                & .PortfolioPageDropLeftModelImage {
-                    margin-left: 20px;
-                    font-size: 48px;
-                }
+//             & .PortfolioPageImageFullModel {
+//                 & .PortfolioPageDropLeftModelImage {
+//                     margin-left: 20px;
+//                     font-size: 48px;
+//                 }
 
-                & .PortfolioPageDropRightModelImage {
-                    margin-right: 20px;
-                    font-size: 48px;
-                }
-            }
-        }
-    }
-}
+//                 & .PortfolioPageDropRightModelImage {
+//                     margin-right: 20px;
+//                     font-size: 48px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 1500px) {
-    .PortfolioPageWrapper {
-        & .PortfolioPageImagesModal {
-            & .PortfolioPageModelClose {
-                margin-right: 20px !important;
-                margin-top: 15px !important;
-            }
+// @media screen and (max-width: 1500px) {
+//     .PortfolioPageWrapper {
+//         & .PortfolioPageImagesModal {
+//             & .PortfolioPageModelClose {
+//                 margin-right: 20px !important;
+//                 margin-top: 15px !important;
+//             }
 
-            & .PortfolioPageNumberOfPictures {
-                margin-right: 20px !important;
-                margin-top: 10px !important;
-            }
+//             & .PortfolioPageNumberOfPictures {
+//                 margin-right: 20px !important;
+//                 margin-top: 10px !important;
+//             }
 
-            & .PortfolioPageImageFullModel {
-                & .PortfolioPageDropLeftModelImage {
-                    margin-left: 20px;
-                    font-size: 36px;
-                }
+//             & .PortfolioPageImageFullModel {
+//                 & .PortfolioPageDropLeftModelImage {
+//                     margin-left: 20px;
+//                     font-size: 36px;
+//                 }
 
-                & .PortfolioPageDropRightModelImage {
-                    margin-right: 20px;
-                    font-size: 36px;
-                }
-            }
-        }
-    }
-}
+//                 & .PortfolioPageDropRightModelImage {
+//                     margin-right: 20px;
+//                     font-size: 36px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 1450px) {
-    .PortfolioPageWrapper {
-        & .PortfolioPageImagesModal {
-            & .PortfolioPageModelClose {
-                margin: 0px !important;
-            }
+// @media screen and (max-width: 1450px) {
+//     .PortfolioPageWrapper {
+//         & .PortfolioPageImagesModal {
+//             & .PortfolioPageModelClose {
+//                 margin: 0px !important;
+//             }
 
-            & .PortfolioPageNumberOfPictures {
-                margin: 0px !important;
-            }
+//             & .PortfolioPageNumberOfPictures {
+//                 margin: 0px !important;
+//             }
 
-            & .PortfolioPageImageFullModel {
-                & .PortfolioPageDropLeftModelImage {
-                    margin-left: 20px;
-                    font-size: 36px;
-                }
+//             & .PortfolioPageImageFullModel {
+//                 & .PortfolioPageDropLeftModelImage {
+//                     margin-left: 20px;
+//                     font-size: 36px;
+//                 }
 
-                & .PortfolioPageDropRightModelImage {
-                    margin-right: 20px;
-                    font-size: 36px;
-                }
-            }
-        }
-    }
-}
+//                 & .PortfolioPageDropRightModelImage {
+//                     margin-right: 20px;
+//                     font-size: 36px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 1390px) {
-    .PortfolioPageWrapper {
-        & .PortfolioPageImagesModal {
-            & .PortfolioPageImageFullModel {
-                & img {
-                    max-width: 90%;
-                    height: auto;
-                    animation-duration: 0.6px;
-                    animation-name: zoom;
-                }
-            }
-        }
-    }
-}
+// @media screen and (max-width: 1390px) {
+//     .PortfolioPageWrapper {
+//         & .PortfolioPageImagesModal {
+//             & .PortfolioPageImageFullModel {
+//                 & img {
+//                     max-width: 90%;
+//                     height: auto;
+//                     animation-duration: 0.6px;
+//                     animation-name: zoom;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 1364px) {
-    .PortfolioPageWrapper {
-        & .PortfolioPageContent {
-            & .PortfolioPageCard {
+// @media screen and (max-width: 1364px) {
+//     .PortfolioPageWrapper {
+//         & .PortfolioPageContent {
+//             & .PortfolioPageCard {
 
-                & .PortfolioPageArrowBack, .PortfolioPageArrowForward {
-                    & .ArrowBack , .ArrowForward{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center; 
-                    }
+//                 & .PortfolioPageArrowBack, .PortfolioPageArrowForward {
+//                     & .ArrowBack , .ArrowForward{
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center; 
+//                     }
          
-                }
+//                 }
 
                 
-                & .PortfolioPageList {
-                    & .PortfolioPageItem {
-                        display: grid !important;
-                        align-items: flex-start;
+//                 & .PortfolioPageList {
+//                     & .PortfolioPageItem {
+//                         display: grid !important;
+//                         align-items: flex-start;
 
-                        & .PortfolioPageItemImage {
-                            order: 1;
-                            & .PortfolioPageImage {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center; 
-                            }
-                        }
+//                         & .PortfolioPageItemImage {
+//                             order: 1;
+//                             & .PortfolioPageImage {
+//                                 display: flex;
+//                                 justify-content: center;
+//                                 align-items: center; 
+//                             }
+//                         }
 
-                        & .PortfolioPageItemDetail {
-                            order: 2;
-                            margin-top: 20px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                         & .PortfolioPageItemDetail {
+//                             order: 2;
+//                             margin-top: 20px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 780px) {
-    .PortfolioPageWrapper {
-        & .PortfolioPageContent {
-            & .PortfolioPageCard {
-                & .PortfolioPageList {
-                    & .PortfolioPageItem {
-                        & .PortfolioPageItemImage {
-                            & .PortfolioPageImage {
-                               & img{
-                                max-width: 100%;
-                                height: auto;
-                               }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+// @media screen and (max-width: 780px) {
+//     .PortfolioPageWrapper {
+//         & .PortfolioPageContent {
+//             & .PortfolioPageCard {
+//                 & .PortfolioPageList {
+//                     & .PortfolioPageItem {
+//                         & .PortfolioPageItemImage {
+//                             & .PortfolioPageImage {
+//                                & img{
+//                                 max-width: 100%;
+//                                 height: auto;
+//                                }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

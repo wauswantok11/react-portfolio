@@ -30,14 +30,6 @@ const Navbar = ({ page, setPage , language, setLanguage }) => {
   const titlePortfolio = language === "thai" ? "ผลงาน" : "Portfolio"
   const titleLanguage = language === "thai" ? "ภาษา" : "Language"
  
-  const classes = useStyles();
-
-  const [color, setColor] = useState("");
-
-  const handleColorChange = (...args) => {
-    console.log(args);
-  };
-
   return (
     <>
       <nav>
@@ -54,10 +46,7 @@ const Navbar = ({ page, setPage , language, setLanguage }) => {
               </li>
               <li onClick={() => setPage("portfolioPage")} role="button" tabIndex={0}>
                 {titlePortfolio}
-              </li>
-              <li onClick={() => setPage("ContactPage")} role="button" tabIndex={0}>
-                {titleContact}
-              </li>
+              </li> 
             </ul>
 
             <div className={styles.DivChangeSwitch}>
@@ -83,10 +72,7 @@ const Navbar = ({ page, setPage , language, setLanguage }) => {
                   </li>
                   <li onClick={() => setPage("portfolioPage")} role="button" tabIndex={0}>
                     {titlePortfolio}
-                  </li>
-                  <li onClick={() => setPage("ContactPage")} role="button" tabIndex={0}>
-                    {titleContact}
-                  </li>
+                  </li> 
                 </ul>
 
                 <div className={styles.MobileDivChangeSwitch}>
