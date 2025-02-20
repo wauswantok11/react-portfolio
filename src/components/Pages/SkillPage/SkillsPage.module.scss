@@ -6,7 +6,7 @@
     height: auto !important;
     margin: 0 auto;
     overflow: hidden;
-    z-index: 0;
+    z-index: 1;
 
     & .SkillPagerTitle {
         width: 100% !important;
@@ -160,7 +160,6 @@
             & .SkillPageCaList {
                 display: flex;
 
-                // padding-top: 10px;
                 & .SkillPageCaImage {
                     margin: 10px;
 
@@ -170,6 +169,7 @@
                         border-radius: 8px;
                         object-fit: cover;
                     }
+
                     & .SkillPageImageContainer {
                         position: relative;
                         overflow: hidden;
@@ -181,15 +181,16 @@
                             display: flex;
                             cursor: pointer;
                             justify-content: center;
-                            align-items: center; 
-                            color: transparent; /* ซ่อน icon ตอนแรก */
+                            align-items: center;
+                            color: transparent;
+                            /* ซ่อน icon ตอนแรก */
                             font-size: 54px;
                             transition: all 0.3s ease-in-out;
                             width: 100%;
                             height: 100%;
 
                             & .SkillPageIconZoom {
-                                display: none; 
+                                display: none;
                             }
 
                             &:hover {
@@ -200,12 +201,47 @@
                                     justify-content: center !important;
                                     align-items: center !important;
                                 }
-    
+
                                 border: 3px solid #00000003;
                                 background-color: rgba(0, 0, 0, 0.5);
                             }
                         }
                     }
+                }
+            }
+        }
+
+        & .SkillPageCaOther {
+            margin-top: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            & .SkillPageBtnOther {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #00000025;
+                // box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+                border-radius: 20px;
+                width: 150px;
+                height: 30px;
+
+                & p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 10px;
+                    font-weight: bold;
+                    font-family: "IBM Plex Sans Thai", "IBM Plex Sans Condensed";
+                    font-size: 16px;
+                    svg {
+                        margin-right: 5px;
+                        margin-left: 5px;
+                      }
+                      
                 }
             }
         }

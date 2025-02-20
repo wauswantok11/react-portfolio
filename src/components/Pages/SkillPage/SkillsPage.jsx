@@ -6,7 +6,9 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import { MdZoomIn } from "react-icons/md";
-
+import ModuleFullscreen from "../../../plugins/moduleFullscreen"
+import { FaAnglesDown , FaAnglesUp } from "react-icons/fa6";
+ 
 const SkillsPage = ({ language }) => {
   const [selectTypeChart, setSelectTypeChart] = React.useState("line");
   const title = language === "thai" ? "ทักษะ" : "Skills";
@@ -32,7 +34,18 @@ const SkillsPage = ({ language }) => {
     language === "thai" ? "กลางปี 2568" : "mid-2025",
     language === "thai" ? "ปลายปี 2568" : "the end of 2025",
   ];
-  const [isHoveredImgCA, setIsHoveredImgCA] = React.useState(false);
+
+  const [showModal, setShowModal] = React.useState(false);
+  const [imageCa , setImageCa] = React.useState("");
+  const moduleImageCa = (pathImage) =>{
+      setShowModal(true);
+      setImageCa(pathImage);
+  }
+
+  const [btnOther , seBtnOther] = React.useState("");
+  const toggleBtnOther = () => {
+    seBtnOther(!btnOther);
+  };
 
   return (
     <div className={styles.SkillPageWrapper}>
@@ -203,15 +216,14 @@ const SkillsPage = ({ language }) => {
       </div>
 
       {/* content other works */}
-      <div className={styles.SkillPageOtherWorks}>
+      {/* <div className={styles.SkillPageOtherWorks}>
         <div className={styles.SkillPageOtherWorksTitle}>
           <h4> {OtherWorksTitle} </h4>
-          <p>โปรเจคอื่นๆ ที่มีการ</p>
+          <p>{language === "thai" ? "โปรเจคอื่นๆ ที่มีการ" : ""}</p>
         </div>
         <div className={styles.SkillPageOtherWorksDetail}>
-           
         </div>
-      </div>
+      </div> */}
 
       {/* content works ca */}
       <div className={styles.SkillPageWorksCA}>
@@ -221,15 +233,7 @@ const SkillsPage = ({ language }) => {
         <div className={styles.SkillPageOtherWorksDetailCA}>
           <p> React Certificate </p>
           <div className={styles.SkillPageCaList}>
-            <div className={styles.SkillPageCaImage}>
-              <div className={styles.SkillPageImageContainer}>
-                <img src="/image/ca/react-01.png" alt="React 1" />
-                <div className={styles.SkillPageIcon}>
-                  <MdZoomIn className={styles.SkillPageIconZoom} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.SkillPageCaImage}>
+            <div className={styles.SkillPageCaImage}  onClick={() => moduleImageCa("/image/ca/react-02.png", setShowModal)}>
               <div className={styles.SkillPageImageContainer} onClick={()=>{ console.log("click")}}>
                 <img src="/image/ca/react-02.png" alt="React 2" />
                 <div className={styles.SkillPageIcon}>
@@ -237,14 +241,51 @@ const SkillsPage = ({ language }) => {
                 </div>  
               </div>
             </div>
+            <div className={styles.SkillPageCaImage} onClick={() => moduleImageCa("/image/ca/react-01.png", setShowModal)}>
+              <div className={styles.SkillPageImageContainer}>
+                <img src="/image/ca/react-01.png" alt="React 1" />
+                <div className={styles.SkillPageIcon}>
+                  <MdZoomIn className={styles.SkillPageIconZoom} />
+                </div>
+              </div>
+            </div>
+          </div>
+        {btnOther && (
+          <div className={styles.SkillPageCaList}>
+            <div className={styles.SkillPageCaImage} onClick={() => moduleImageCa("/image/ca/docker.png", setShowModal)}>
+              <p> Docker Certificate </p>
+              <div className={styles.SkillPageImageContainer}>
+                <img src="/image/ca/docker.png" alt="React 1" />
+                <div className={styles.SkillPageIcon}>
+                  <MdZoomIn className={styles.SkillPageIconZoom} />
+                </div>
+              </div>
+            </div>
+            <div className={styles.SkillPageCaImage} onClick={() => moduleImageCa("/image/ca/go.png", setShowModal)}>
+              <p> Golang RestAPI Certificate </p>
+              <div className={styles.SkillPageImageContainer}>
+                <img src="/image/ca/go.png" alt="Golang RestAPI" />
+                <div className={styles.SkillPageIcon}>
+                  <MdZoomIn className={styles.SkillPageIconZoom} />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        </div>
+
+        <div className={styles.SkillPageCaOther} onClick={toggleBtnOther}>
+          <div className={styles.SkillPageBtnOther}>
+          <p onClick={toggleBtnOther}>
+            {btnOther ? ( <> <FaAnglesUp /> ซ่อน <FaAnglesUp /> </> ) : ( <> <FaAnglesDown /> ดูเพิ่มเติม <FaAnglesDown /> </> )}
+          </p>
           </div>
         </div>
+
       </div>
 
-      {/* module image full screen */}
-      <div className={styles.SkillPageModuleImage}>
-        
-      </div>
+      {showModal && <ModuleFullscreen pathImage={imageCa} setShowModal={setShowModal} />}
+
     </div>
   );
 };
