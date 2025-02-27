@@ -51,7 +51,7 @@ const hero = ({ language }) => {
                                 <a href='https://github.com/wauswantok11'><FaGithub /></a>
                             </li>
                             <li>
-                                <a href='#'><FaLinkedin /></a>
+                                <a href='https://www.linkedin.com/in/adul-vasuvantoka-476196345'><FaLinkedin /></a>
                             </li>
                             <li>
                                 <a href='https://www.facebook.com/boom.4146'><FaFacebook /></a>
